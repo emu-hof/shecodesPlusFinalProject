@@ -30,8 +30,8 @@ li {
   margin: 30px auto;
   border-radius: 10px;
   max-width: 600px;
-  border-top: 15px solid black;
-  border-bottom: 15px solid black;
+  border-top: 15px solid #d8ccf1;
+  border-bottom: 15px solid #d8ccf1;
 }
 .temp {
   color: rgb(33, 33, 33);
@@ -70,7 +70,7 @@ img {
   width: max-content;
   margin-top: 20px;
   text-align: center;
-  color: #d8ccf1;
+  color: #000;
 }
 
 .weather-forecast-date {
@@ -90,5 +90,8 @@ img {
   border-color: #885df1;
 }
 .btn-primary:hover {
-  color: #885df1;
+  background-color: #885df1;
+}
+.btn-primary:active {
+  background-color: #885df1;
 }

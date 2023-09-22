@@ -66,7 +66,7 @@ function weatherInfo(response) {
   getForecast(response.data.coordinates);
 }
 axios
-  .get(`${apiUrl}&lat=9.0107934&lon=38.7612525&key=${apiKey}&units=metric`)
+  .get(`${apiUrl}&query=addis ababa &key=${apiKey}&units=metric`)
   .then(weatherInfo);
 
 function displayForecast(response) {
