@@ -70,7 +70,7 @@ img {
   width: max-content;
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: #d8ccf1;
 }
 
 .weather-forecast-date {
@@ -88,4 +88,7 @@ img {
 .btn-primary {
   background-color: #885df1;
   border-color: #885df1;
+}
+.btn-primary:hover {
+  color: #885df1;
 }
