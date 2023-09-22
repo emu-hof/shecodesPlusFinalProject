@@ -43,6 +43,7 @@ li {
 .units {
   position: relative;
   top: -34px;
+  right: 6px;
 }
 
 .search-form {
