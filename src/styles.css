@@ -59,13 +59,7 @@ img {
   height: 64px;
   width: 64px;
 }
-.active {
-  color: black;
-  cursor: default;
-}
-.active:hover {
-  text-decoration: none;
-}
+
 .weather-forecast {
   width: max-content;
   margin-top: 20px;

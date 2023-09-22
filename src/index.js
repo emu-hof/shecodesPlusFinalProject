@@ -42,31 +42,12 @@ function weatherInfo(response) {
   let tempC = Math.round(response.data.temperature.current);
   temperature.innerHTML = tempC;
 
-  function tempconverterCelsius(event) {
-    event.preventDefault();
-    temperature.innerHTML = tempC;
-    Celsius.classList.add("active");
-    fahrenheitTemperature.classList.remove("active");
-  }
-  function tempconverterFahrenheit(event) {
-    event.preventDefault();
-    temperature.innerHTML = Math.round(
-      (response.data.temperature.current * 9) / 5 + 32
-    );
-    Celsius.classList.remove("active");
-    fahrenheitTemperature.classList.add("active");
-  }
-  let Celsius = document.querySelector("#tempC");
-  Celsius.addEventListener("click", tempconverterCelsius);
-  let fahrenheitTemperature = document.querySelector("#tempF");
-  fahrenheitTemperature.addEventListener("click", tempconverterFahrenheit);
-
   humidity.innerHTML = response.data.temperature.humidity;
   wind.innerHTML = response.data.wind.speed;
   getForecast(response.data.coordinates);
 }
 axios
-  .get(`${apiUrl}&query=addis ababa &key=${apiKey}&units=metric`)
+  .get(`${apiUrl}&query=addis ababa&key=${apiKey}&units=metric`)
   .then(weatherInfo);
 
 function displayForecast(response) {
