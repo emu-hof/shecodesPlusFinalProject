@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control shadow-sm"
+                id="searchForm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+                id="search"
+              />
+            </div>
+          </div>
+        </form>
+        <h1></h1>
+        <ul>
+          <li class="time"></li>
+          <li class="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="leftside">
+              <img src="" alt="Clear" id="icon" class="float-left" />
+              <span class="temp"></span>
+              <span class="units"
+                ><a href="#" id="tempC" class="active">°C</a> |
+                <a href="#" id="tempF">°F</a></span
+              >
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span class="humidity"></span>%</li>
+              <li>Wind: <span class="wind"></span>Km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small
+        ><a href="https://github.com/emu-hof/Week7Homework" target="_blank"
+          >Open-source code</a
+        >
+        by Edom K/michael</small
+      >
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
